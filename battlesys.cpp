@@ -300,7 +300,7 @@ void gamelevel(vector<string>& names, vector<int>& health, vector<int>& attack, 
         tempstring.push_back("Killed level " + to_string(i) + " dragon!"+ " | " + "Money earned: " + to_string(moneygain) + " | " + "Mana gained: " + to_string(managain));
         tempstring.erase(tempstring.begin());
         screen_clear();
-        cout << "--------------------------------------------------------------------------" << endl << " You killed the dragon with \033[1;31m" + to_string(dragondamage) + "\033[0m damage!" << endl << "-------------------------------------------------------------------------" << endl;
+        cout << "--------------------------------------------------------------------------" << endl << " You killed the dragon with \033[1;31m" + to_string(dragondamage) + "\033[0m damage!" << endl << "--------------------------------------------------------------------------" << endl;
         sleep(2);
         screen_clear();
         }
@@ -309,7 +309,7 @@ void gamelevel(vector<string>& names, vector<int>& health, vector<int>& attack, 
         tempstring.push_back("Blocked: " + to_string(protection) + " damage" + " | " + "Dealt: " + to_string(dragondamage) + " damage" + " | " + "Enemy dealt: " + to_string(playerdamage) + " damage" + " | " + "Money earned: " + to_string(moneygain) + " | " + "Mana gained: " + to_string(managain));
         tempstring.erase(tempstring.begin());
         screen_clear();
-        cout << "--------------------------------------------------------------------------" << endl <<"You deal \033[1;31m" + to_string(dragondamage) + "\033[0m damage to " + names[i] + " but it also hit you with \033[1;31m" + to_string(blockeddamage) + "\033[0m damage!!!" << endl << "-------------------------------------------------------------------------" << endl;
+        cout << "-------------------------------------------------------------------------" << endl <<"You deal \033[1;31m" + to_string(dragondamage) + "\033[0m damage to " + names[i] + " but it also hit you with \033[1;31m" + to_string(blockeddamage) + "\033[0m damage!!!" << endl << "-------------------------------------------------------------------------" << endl;
         sleep(3);
         screen_clear();
       }

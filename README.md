@@ -1,27 +1,28 @@
 ![Logo](https://images.cooltext.com/5696966.png)
 
-# Developers
+# Developers👨🏻‍💻
   [Chu Ming Chit](https://github.com/EricMingChit)&ensp;&ensp;UID:3036224963
   
   [Woo Dee](https://github.com/r4g3r4hk)&ensp;&ensp;UID:3036226167
 
 
-# Introduction
+# Introduction📚
 
-  Welcome, brave warrior!
+  Welcome, brave warrior!🗡️
   
   This is our new C++ text-based game, Nerd Dragon Slayer!!! In this game you experience engaging classic battle with different dragons.
 
   Here is a little strategy if you can't pass all 7 levels. Please read it after trying!!!
 
+  ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
   <details>
   <summary>Click to reveal the strategy!</summary>
-
   > Upgrade defense in the early stage to save mana, save money in the mid-stage, Upgrade attack in the late-stage.
   </details>
+  ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️
 
   
-## Game Background:
+## Game Background📝
 
   You are a game developer who fell asleep while coding his game, Nerd Dragon Slayer, and wakes up trapped inside it.
   
@@ -31,7 +32,7 @@
 
 
 
-## Game Rules:
+## Game Rules:🗒️
 
   The player starts with initial values for Health, Attack, Defense, Mana, and Money.
   
@@ -64,11 +65,11 @@
   
   ### You will have 3 options to fight the dragon, Attack, Defend, and Smite.
   
-  1. Attack: You will attack the dragon, dealing damage to it based on your attack stat. (+Money, +Mana)
+  1. Attack: You will attack the dragon, dealing damage to it based on your attack stat. (+Money, +Mana)⚔️
     
-  2. Defend: You will defend against the dragon's attack, reducing the damage based on your defense stat. (+Mana)
+  2. Defend: You will defend against the dragon's attack, reducing the damage based on your defense stat. (+Mana)𐂫
     
-  3. Smite: You will attack the dragon with fixed 2.2x damage, consuming mana in the process. (+Extra Money)
+  3. Smite: You will attack the dragon with fixed 2.2x damage, consuming mana in the process. (+Extra Money)🩸
 
   ```bash
   A - Attack   S - Smite(20 Mana) D - Defense  P - Shopping
@@ -88,7 +89,7 @@
   
   Good luck, warrior!
 
-# Code requirements
+# Code requirements💻
 
   ### 1. Generation of random sets: 
   - the amount of damage dealt, damage received, mana and money gained are determined randomly based on your stats.
@@ -112,10 +113,10 @@
   - "uti.h" is the header file of "uti.cpp".
   - "main.cpp" stores the stats, prints the main menu, and starting and rules screen.
 
-# Non-standard libraries
+# Non-standard libraries📖
   No Non-standard linraries are used in this project and integrated to our code repo.
 
-# Compilation and execution instructions
+# Compilation and execution instructions🏃🏻
 
   To compile the program files, type the command 
 

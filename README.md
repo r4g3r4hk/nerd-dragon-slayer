@@ -8,7 +8,17 @@
 
 # Introduction
 
-  Welcome to out C++ text-based game
+  Welcome, brave warrior!
+  
+  This is our new C++ text-based game, Nerd Dragon Slayer!!! In this game you experience engaging classic battle with different dragons.
+
+  Here is a little strategy if you can't pass all 7 levels. Please read it after trying!!!
+
+  <details>
+  <summary>Click to reveal the strategy!</summary>
+
+  > Upgrade defense in the early stage to save mana, save money in the mid-stage, Upgrade attack in the late-stage.
+  </details>
 
   
 ## Game Background:

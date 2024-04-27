@@ -61,7 +61,7 @@ void Rules_Screen(){
       cout << "\033[1;31;40m" << picture[16] << "\033[0m" << endl;
       cout << "\033[1mBackground: \033[0m" << endl;
       cout << "You are a game developer who fell asleep while coding his game, Nerd Dragon Slayer, and wakes up trapped inside it." << endl;
-      cout << "Without a functioning quit feature, you must defeat the dragon within the game to escape. "<< endl;
+      cout << "Without a functioning quit feature, you must defeat all the dragons within the game to escape. "<< endl;
       cout << "\033[0mThere are only two ways to end this game, either by defeating the dragons, or by \033[1,31mdying.\033[0m" << endl << endl;
 
       cout << "\033[1mRules: \033[0m" << endl;

@@ -1,3 +1,4 @@
+![Logo]([https://r76.cooltext.com/d.php?renderid=456939199725776&extension=png](https://images.cooltext.com/5696966.png))
 # Nerd Dragon Slayer
 To compile the program files, type the command "make" in terminal to compile the program file to main.
 Then, type "./main" to execute it.

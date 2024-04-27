@@ -34,7 +34,7 @@ void printgamingstats(vector<string>& names, vector<int>& health, vector<int>& a
   cout << "\033[32m-------------------------------------------------------------------------------------------------\033[0m" << endl;
   cout << "History: " << endl << tempstring[0] << endl << tempstring[1] << endl << tempstring[2] << endl;
   cout << "\033[32m-------------------------------------------------------------------------------------------------\033[0m" << endl;
-  cout << "\033[1mA - Attack   S - Smite(20 Mana) D - Defense  P - Shopping\033[0m" << endl;
+  cout << "\033[1mA - Attack   S - Smite(20 Mana) D - Defend  P - Shopping\033[0m" << endl;
 }
 
 //store screen

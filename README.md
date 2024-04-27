@@ -7,21 +7,25 @@
 
 
 # Introduction
-### Game Background:
+
+  Welcome to out C++ text-based game
+
+  
+## Game Background:
 
   You are a game developer who fell asleep while coding his game, Nerd Dragon Slayer, and wakes up trapped inside it.
   
-  Without a functioning quit feature, you must defeat the dragon within the game to escape. 
+  Without a functioning quit feature, you must defeat all the dragons within the game to escape. 
   
   There are only two ways to end this game, either by defeating the dragons, or by dying.
 
 
 
-### Game Rules:
+## Game Rules:
 
   The player starts with initial values for Health, Attack, Defense, Mana, and Money.
   
-  These attributes define the player's capabilities within the game.
+  ### These attributes define the player's capabilities within the game.
   
   ```bash
   |Eric                       Balance: $100|   
@@ -31,7 +35,7 @@
   |Mana: 5                                 | 
   ```
 
-  You can choose to increase your Attack, Defense or heal yourself by spending money in the shop.
+  ### You can choose to increase your Attack, Defense or heal yourself by spending money in the shop.
 
   ```bash
   Shopping Menu                          Balance: $100
@@ -48,10 +52,21 @@
   Type your choice:
   ```
   
-  You will have 3 options to fight the dragon, Attack, Defend, and Smite.
-    1. Attack: You will attack the dragon, dealing damage to it based on your attack stat. (+Money, +Mana)
-    2. Defend: You will defend against the dragon's attack, reducing the damage based on your defense stat. (+Mana)
-    3. Smite: You will attack the dragon with fixed 2.2x damage, consuming mana in the process. (+Extra Money)
+  ### You will have 3 options to fight the dragon, Attack, Defend, and Smite.
+  
+  1. Attack: You will attack the dragon, dealing damage to it based on your attack stat. (+Money, +Mana)
+    
+  2. Defend: You will defend against the dragon's attack, reducing the damage based on your defense stat. (+Mana)
+    
+  3. Smite: You will attack the dragon with fixed 2.2x damage, consuming mana in the process. (+Extra Money)
+
+  ```bash
+  A - Attack   S - Smite(20 Mana) D - Defense  P - Shopping
+  Enter your choice: 
+  ```
+  
+  
+  ### During each round, the dragon will also attack the player and your health will decrease accordingly.
 
   ```bash
   -------------------------------------------------------------------------
@@ -59,35 +74,49 @@
   -------------------------------------------------------------------------
   ```
   
-  During each round, the dragon will also attack the player and your health will decrease accordingly.
+  You must manage your resources and abilities strategically to survive and defeat the dragons.
   
-  You must manage your resources and abilities strategically to survive and defeat the dragons. Good luck, warrior!
+  Good luck, warrior!
 
+# Code requirements
 
+  ### 1. Generation of random sets: 
+  - the amount of damage dealt, damage received, mana and money gained are determined randomly based on your stats.
 
+  ### 2. Data structures for storing game status:
+  - vector to store the stats of the player and the dragons, and the sprites.
+  - integer to store the level number, the damage, money and mana gained at runtime.
 
-To compile the program files, type the command "make" in terminal to compile the program file to main.
-Then, type "./main" to execute it.
+  ### 3. Dynamic memory management
+  - vector to store the previous 3 in-game events .
 
-Code requirements:
+  ### 4. File input/output
+  - read the stats of the player and the dragons from "Stats.txt".
 
-1. Generation of random sets: the amount of damage dealt, damage received, mana and money gained are determined randomly based on your stats.
+  ### 5. Program codes in multiple files
+  - "picture.cpp" is used to store the sprites of the dragons into the game.
+  - "picture.h" is the header file of "picture.cpp".
+  - "battlesys.cpp" includes a rng, a battle system, prints game screen and part of the end screen.
+  - "battlesys.h" is the header file of "battlesys.cpp".
+  - "uti.cpp" is used to read from file, clear screen and prints part of the end screen.
+  - "uti.h" is the header file of "uti.cpp".
+  - "main.cpp" stores the stats, prints the main menu, and starting and rules screen.
 
-2. Data structures for storing game status:
-- vector to store the stats of the player and the dragons, and the sprites
-- integer to store the level number, the damage, money and mana gained at runtime
+# Non-standard libraries
+  No Non-standard linraries are used in this project and integrated to our code repo.
 
-3. Dynamic memory management
-- vector to store the stats of the player and the dragons, and the sprites
+# Compilation and execution instructions
 
-4. File input/output
-- read the stats of the player and the dragons from "Stats.txt"
+  To compile the program files, type the command 
 
-5. Program codes in multiple files
-- "picture.cpp" is used to store the sprites of the dragons into the game
-- "picture.h" is the header file of "picture.cpp"
-- "battlesys.cpp" includes a rng, a battle system, prints game screen and part of the end screen
-- "battlesys.h" is the header file of "battlesys.cpp"
-- "uti.cpp" is used to read from file, clear screen and prints part of the end screen
-- "uti.h" is the header file of "uti.cpp"
-- "main.cpp" stores the stats, prints the main menu, and starting and rules screen
+  ```bash
+  make
+  ```
+
+  in terminal to compile the program file to main.
+  Then, type 
+
+  ```bash
+  ./main
+  ```
+  to execute it.

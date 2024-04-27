@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//store dragon pic in the game
+//store picture in the game (picture source: https://www.asciiart.eu/mythology/dragons & https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 void readPic(vector<string>& picture){
 const char* Rs0 = R"()";
 const char* Rs1 = R"(

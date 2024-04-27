@@ -12,6 +12,8 @@
   
   This is our new C++ text-based game, Nerd Dragon Slayer!!! In this game you experience engaging classic battle with different dragons.
 
+  This is our [demo video](https://www.youtube.com/watch?v=fQ3mu96rIiU)
+
   Here is a little strategy if you can't pass all 7 levels. Please read it after trying!!!
 
   ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️

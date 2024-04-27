@@ -1,11 +1,12 @@
-![Logo]([https://r76.cooltext.com/d.php?renderid=456939199725776&extension=png](https://images.cooltext.com/5696966.png))
-# Nerd Dragon Slayer
-To compile the program files, type the command "make" in terminal to compile the program file to main.
-Then, type "./main" to execute it.
+![Logo](https://images.cooltext.com/5696966.png)
+
+# Developers
+  [Chu Ming Chit](https://github.com/PeterPan246)&ensp;&ensp;UID:3036224963
+  [Woo Dee](https://github.com/PeterPan246)&ensp;&ensp;UID:3036226167
 
 
-
-Game Background:
+# Introduction
+### Game Background:
 
   You are a game developer who fell asleep while coding his game, Nerd Dragon Slayer, and wakes up trapped inside it.
   Without a functioning quit feature, you must defeat the dragon within the game to escape. 
@@ -13,7 +14,7 @@ Game Background:
 
 
 
-Game Rules:
+### Game Rules:
 
   The player starts with initial values for Health, Attack, Defense, Mana, and Money.
   These attributes define the player's capabilities within the game.
@@ -25,6 +26,10 @@ Game Rules:
   During each round, the dragon will also attack the player and your health will decrease accordingly. You must manage your resources and abilities strategically to survive and defeat the dragons. Good luck, warrior!
 
 
+
+
+To compile the program files, type the command "make" in terminal to compile the program file to main.
+Then, type "./main" to execute it.
 
 Code requirements:
 

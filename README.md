@@ -1,7 +1,8 @@
 ![Logo](https://images.cooltext.com/5696966.png)
 
 # Developers
-  [Chu Ming Chit](https://github.com/PeterPan246)&ensp;&ensp;UID:3036224963
+  [Chu Ming Chit](https://github.com/EricMingChit)&ensp;&ensp;UID:3036224963
+  
   [Woo Dee](https://github.com/r4g3r4hk)&ensp;&ensp;UID:3036226167
 
 
@@ -9,7 +10,9 @@
 ### Game Background:
 
   You are a game developer who fell asleep while coding his game, Nerd Dragon Slayer, and wakes up trapped inside it.
+  
   Without a functioning quit feature, you must defeat the dragon within the game to escape. 
+  
   There are only two ways to end this game, either by defeating the dragons, or by dying.
 
 
@@ -17,13 +20,48 @@
 ### Game Rules:
 
   The player starts with initial values for Health, Attack, Defense, Mana, and Money.
+  
   These attributes define the player's capabilities within the game.
+  
+  ```bash
+  |Eric                       Balance: $100|   
+  |Health: 100/100                         | 
+  |Attack: 10                              |        
+  |Defense: 5                              | 
+  |Mana: 5                                 | 
+  ```
+
   You can choose to increase your Attack, Defense or heal yourself by spending money in the shop.
+
+  ```bash
+  Shopping Menu                          Balance: $100
+
+  -------------------------------------------------------------------------------------------------
+  S - Sword Upgrade (+5 Attack)           Price: $30
+  -------------------------------------------------------------------------------------------------
+  A - Armor Upgrade (+5 Defense)          Price: $25
+  -------------------------------------------------------------------------------------------------
+  H - Heal (+20 Health)                   Price: $20
+  -------------------------------------------------------------------------------------------------
+  Q - Back to the fight                   Price: $0
+  -------------------------------------------------------------------------------------------------
+  Type your choice:
+  ```
+  
   You will have 3 options to fight the dragon, Attack, Defend, and Smite.
     1. Attack: You will attack the dragon, dealing damage to it based on your attack stat. (+Money, +Mana)
     2. Defend: You will defend against the dragon's attack, reducing the damage based on your defense stat. (+Mana)
     3. Smite: You will attack the dragon with fixed 2.2x damage, consuming mana in the process. (+Extra Money)
-  During each round, the dragon will also attack the player and your health will decrease accordingly. You must manage your resources and abilities strategically to survive and defeat the dragons. Good luck, warrior!
+
+  ```bash
+  -------------------------------------------------------------------------
+  You deal 6 damage to Emberclaw but it also hit you with 12 damage!!!
+  -------------------------------------------------------------------------
+  ```
+  
+  During each round, the dragon will also attack the player and your health will decrease accordingly.
+  
+  You must manage your resources and abilities strategically to survive and defeat the dragons. Good luck, warrior!
 
 
 

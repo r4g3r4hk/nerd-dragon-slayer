@@ -50,3 +50,52 @@ void readStatsFromFile(vector<string>& names, vector<int>& health, vector<int>& 
                     break;
             }
         }
+        lineN++;
+    }
+
+    file.close();
+}
+
+//screens after winning
+void gamewin(){
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"You win!" << endl << "-------------------------------------------------------------" << endl;
+  sleep(2);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"Congratulations!" << endl << "-------------------------------------------------------------" << endl;
+  sleep(2);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"You made it and you went back to reality." << endl << "-------------------------------------------------------------" << endl;
+  sleep(3);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"Because of your real-life experience in the game, you improve it in many ways. " << endl << "-------------------------------------------------------------" << endl;
+  sleep(3);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"This game became the the best-selling game in 2048..." << endl << "-------------------------------------------------------------" << endl;
+  sleep(3);
+
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"You are remembered as the best developer in the world."<< endl << "-------------------------------------------------------------" << endl;
+}
+
+//screens after losing
+void gameover(){
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"You Died" << endl << "-------------------------------------------------------------" << endl;
+  sleep(2);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"Game Over" << endl << "-------------------------------------------------------------" << endl;
+  sleep(2);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"You didn't make it, and you died in your own game." << endl << "-------------------------------------------------------------" << endl;
+  sleep(3);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"No one knows where you are but your groupmates finished the game for you." << endl << "-------------------------------------------------------------" << endl;
+  sleep(3);
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"This game became the the best-selling game in 2048..." << endl << "-------------------------------------------------------------" << endl;
+  sleep(3);
+
+  screen_clear();
+  cout << "--------------------------------------------------------------" << endl <<"You will be remembered as the best developer in the world."<< endl << "-------------------------------------------------------------" << endl;
+}

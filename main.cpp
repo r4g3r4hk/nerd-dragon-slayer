@@ -74,3 +74,79 @@ void Rules_Screen(){
       cout << "  3. \033[1,31mSmite\033[0m: You will attack the dragon with fixed 2.2x damage, consuming mana in the process. (+ Extra Money)" << endl;
       cout << "During each round, the dragon will also attack the player and your health will decrease accordingly. You must manage your resources and abilities strategically to survive and defeat the dragons. \033[1:33mGood luck, warrior!\033[0m" << endl;
       // rule screen menu
+      cout << "\033[1mMain Menu\033[0m" << endl;
+      cout << "\033[32m---------------------\033[0m" << endl;
+      cout << "S - Start" << endl;
+      cout << "B - Back to menu" << endl;
+      cout << "\033[32m---------------------\033[0m" << endl;
+      cout << "Enter your choice: ";
+      cin >> choice3;
+
+      switch (choice3) {
+      case 'S':
+      case 's':
+        PlayerBuildScreen();
+        loop2 = false;
+      case 'B':
+      case 'b':
+        loop2 = false;
+        screen_clear();
+        break;
+      default:
+          screen_clear();
+          cout << "-------------------------------------" << endl <<"\033[1;31mInvalid\033[0m choice. Please try again." << endl << "------------------------------------" << endl;
+          sleep(1);
+          screen_clear();
+
+      }
+    }
+}
+
+int main(){
+  //clear previous output 
+  screen_clear();
+  //reading stats of game elements
+  readStatsFromFile(names, health, attack, defense, mana, difficulty);
+  readPic(picture);
+
+//menu
+char choice;
+bool loop1 = true;
+    while (loop1 == true) {
+        cout << "\033[1;31;40m" << picture[15] << "\033[0m" << endl;
+      
+        cout << "\033[1mMain Menu\033[0m" << endl;
+        cout << "\033[32m---------------------\033[0m" << endl;
+        cout << "S - Start" << endl;
+        cout << "R - Rules and Background" << endl;
+        cout << "Q - Quit" << endl;
+        cout << "\033[32m---------------------\033[0m" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 'R':
+            case 'r':
+                Rules_Screen();
+                break;
+            case 'S':
+            case 's':
+                PlayerBuildScreen();
+                loop1 = false;
+                break;
+            case 'Q':
+            case 'q':
+                screen_clear();
+                cout << "-----------------------------------" << endl << "See you next time, warrior." << endl << "----------------------------------" << endl;
+                return 0;
+            
+            default:
+                screen_clear();
+                cout << "-------------------------------------" << endl <<"\033[1;31mInvalid\033[0m choice. Please try again." << endl << "------------------------------------" << endl;
+                sleep(1);
+                screen_clear();
+        }
+    }
+
+    return 0;
+}
